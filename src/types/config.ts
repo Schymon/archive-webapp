@@ -19,13 +19,6 @@ export interface Category {
   items: ArchiveItem[];
 }
 
-export interface Impressum {
-  name: string;
-  address: string;
-  email: string;
-}
-
 export interface Config {
-  impressum: Impressum;
   categories: Category[];
 }

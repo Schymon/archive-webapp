@@ -1,0 +1,37 @@
+{
+  "impressum": {
+    "name": "Max Mustermann",
+    "address": "Musterstraße 123, 12345 Musterstadt",
+    "email": "kontakt@example.com"
+  },
+  "categories": [
+    {
+      "id": "minecraft-welten",
+      "title": "Minecraft-Welten",
+      "items": [
+        {
+          "id": "welt-1",
+          "title": "test world",
+          "image": "public/images/tn-schysch-erste-welt.png",
+          "downloads": [
+            { "label": "Download", "url": "https://example.com/world1.zip", "passwordRequired": false, "password": "" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abitur-videos",
+      "title": "Abitur-Videos & Reden",
+      "items": [
+        {
+          "id": "video-0",
+          "title": "Einleitungs Rede",
+          "image": "public/images/tn-gesamtschule.png",
+          "downloads": [
+            { "label": "Video ansehen/Download", "url": "https://example.com/world1.zip", "passwordRequired": true, "password": "geheim", "passwordHint": "A related question" }
+          ]
+        }
+      ]
+    }
+  ]
+}

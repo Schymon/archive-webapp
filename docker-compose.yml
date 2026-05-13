@@ -1,0 +1,13 @@
+services:
+  archive-webapp:
+    image: schymon/archive-webapp:latest
+    container_name: archive-webapp
+    ports:
+      - "3000:80"
+    volumes:
+      - /opt/ArchiveWebApp/content.json:/usr/share/nginx/html/content.json:ro
+      - /opt/ArchiveWebApp/downloads:/usr/share/nginx/html/downloads:ro
+      - /opt/ArchiveWebApp/images:/usr/share/nginx/html/images:ro
+    environment:
+      - VITE_CONFIG_URL=/content.json
+    restart: unless-stopped

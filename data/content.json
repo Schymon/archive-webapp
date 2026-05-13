@@ -1,34 +1,29 @@
 {
-  "impressum": {
-    "name": "Max Mustermann",
-    "address": "Musterstraße 123, 12345 Musterstadt",
-    "email": "kontakt@example.com"
-  },
   "categories": [
     {
-      "id": "minecraft-welten",
-      "title": "Minecraft-Welten",
+      "id": "minecraft-worlds",
+      "title": "Minecraft Worlds",
       "items": [
         {
-          "id": "welt-1",
-          "title": "test world",
-          "image": "public/images/tn-schysch-erste-welt.png",
+          "id": "world-1",
+          "title": "Test World",
+          "image": "/images/tn-schysch-erste-welt.png",
           "downloads": [
-            { "label": "Download", "url": "https://example.com/world1.zip", "passwordRequired": false, "password": "" }
+            { "label": "Download", "url": "/downloads/world1.zip", "passwordRequired": false, "password": "" }
           ]
         }
       ]
     },
     {
       "id": "abitur-videos",
-      "title": "Abitur-Videos & Reden",
+      "title": "Abitur Videos & Speeches",
       "items": [
         {
           "id": "video-0",
-          "title": "Einleitungs Rede",
-          "image": "public/images/tn-gesamtschule.png",
+          "title": "Introductory Speech",
+          "image": "/images/tn-gesamtschule.png",
           "downloads": [
-            { "label": "Video ansehen/Download", "url": "https://example.com/world1.zip", "passwordRequired": true, "password": "geheim", "passwordHint": "A related question" }
+            { "label": "Watch/Download", "url": "/downloads/speech1.mp4", "passwordRequired": true, "password": "secret", "passwordHint": "A related question" }
           ]
         }
       ]

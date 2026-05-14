@@ -112,6 +112,28 @@ Automatic build and push on merge to `main`:
    - `DOCKERHUB_USERNAME`: Your Docker Hub username
    - `DOCKERHUB_TOKEN`: Docker Hub Access Token
 
+## Git Workflow
+
+### Branches
+
+- **`main`** - Production branch (triggers Docker build & push)
+- **`dev`** - Development branch (work here)
+
+### Workflow
+
+```bash
+# 1. Work on dev branch
+git checkout dev
+# ... make your changes ...
+
+# 2. When ready to release, merge to main
+# (via GitHub PR or directly)
+
+# 3. Keep dev up to date with main
+git checkout dev
+git pull origin main
+```
+
 ## Version
 
 Current version: **1.0.4** (see `src/components/Navbar.tsx`)
